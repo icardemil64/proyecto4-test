@@ -43,8 +43,8 @@ const Disponibilidad = styled(Text)`
 const DetalleProducto = () => {
     return (
         <Container>
-            <IdProducto>0123</IdProducto>
-            <Nombre>Barros Luco</Nombre>
+            <IdProducto>3210</IdProducto>
+            <Nombre>Pizza Hawaina</Nombre>
             <Precio>$10.000</Precio>
             <Cantidad>10</Cantidad>
             <Disponibilidad>Disponible</Disponibilidad>

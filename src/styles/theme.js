@@ -27,7 +27,7 @@ export const lightTheme = {
     bordeProductos: '#dedee9',
     listTitleProductos: '#807D75',
     menuHoverColor: '#faf5c7',
-    botonProductos: '#fad2d2',
+    botonProductos: '#E7201F',
     ...globalTheme
 }
 

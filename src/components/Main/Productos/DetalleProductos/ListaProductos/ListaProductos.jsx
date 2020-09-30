@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import BarraProductos from './BarraProductos'
-import BotonAgregarProducto from './BotonAgregarProducto'
 import DetalleProducto from './DetalleProducto'
 
 const Container = styled.div`
@@ -41,7 +40,6 @@ const ListaProductos = () => {
                 <DetalleProducto/>
                 <DetalleProducto/>
                 <DetalleProducto/>
-                <BotonAgregarProducto/>
             </ContainerProductos>
         </Container>
     )

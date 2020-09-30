@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const Container = styled.div`
     width: 100%;
     display:flex;
+    cursor:pointer;
     margin: 0.3rem 0;
     background-color: ${({theme}) => theme.primary};
     border-bottom: 1px solid rgba(190,190,190,0.22);
@@ -20,24 +21,21 @@ const Text = styled.h1`
     text-align:center;
 `
 const IdProducto = styled(Text)`
-    width: 10%;
+    width: 15%;
 `
 
 const Nombre = styled(Text)`
-    width: 40%;
+    width: 45%;
 `
 
 const Precio = styled(Text)`
-    width: 10%;
+    width: 15%;
 `
 
-const Cantidad = styled(Text)`
-    width: 20%;
+const Estado = styled(Text)`
+    width: 25%;
 `
 
-const Disponibilidad = styled(Text)`
-    width: 20%;
-`
 
 const DetalleProducto = () => {
     return (
@@ -45,8 +43,7 @@ const DetalleProducto = () => {
             <IdProducto>0123</IdProducto>
             <Nombre>Barros Luco</Nombre>
             <Precio>$10.000</Precio>
-            <Cantidad>10</Cantidad>
-            <Disponibilidad>Disponible</Disponibilidad>
+            <Estado>Disponible</Estado>
         </Container>
     )
 }

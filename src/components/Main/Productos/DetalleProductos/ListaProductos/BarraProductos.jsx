@@ -20,24 +20,21 @@ const Text = styled.h1`
 `
 
 const IdProducto = styled(Text)`
-    width: 10%;
+    width: 15%;
 `
 
 const Nombre = styled(Text)`
-    width: 40%;
+    width: 45%;
 `
 
 const Precio = styled(Text)`
-    width: 10%;
+    width: 15%;
 `
 
-const Cantidad = styled(Text)`
-    width: 20%;
+const Estado = styled(Text)`
+    width: 25%;
 `
 
-const Disponibilidad = styled(Text)`
-    width: 20%;
-`
 
 const BarraProductos = () => {
     return (
@@ -47,8 +44,7 @@ const BarraProductos = () => {
                     <IdProducto>ID</IdProducto>
                     <Nombre>Nombre</Nombre>
                     <Precio>Precio</Precio>
-                    <Cantidad>Cantidad</Cantidad>
-                    <Disponibilidad>Disponibilidad</Disponibilidad>
+                    <Estado>Estado</Estado>
                 </PlaceholderProducto>
             </ContainerProductos>
         </div>

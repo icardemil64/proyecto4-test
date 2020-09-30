@@ -1,6 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
+const NamePlatillo = styled.h4`
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: ${({ theme }) => theme.foodColor};
+`
+const ContainerIcon = styled.div`
+    height: 4rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border: 1px solid ${({ theme }) => theme.buttonColor};
+    border-radius: 1rem;
+`
+
 const Container = styled.div`
     box-sizing: border-box;
     width: 6rem;
@@ -14,15 +28,13 @@ const Container = styled.div`
         background-color: ${({ theme }) => theme.menuHoverColor};
         color: ${({theme}) => theme.foodColorHover};
     }
-`
-
-const ContainerIcon = styled.div`
-    height: 4rem;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border: 1px solid ${({ theme }) => theme.buttonColor};
-    border-radius: 1rem;
+    &:hover ${NamePlatillo}{
+        color: black;
+    }
+    &:hover ${ContainerIcon}{
+        background-color: ${({ theme }) => theme.secondary};
+        border: 1px solid ${({ theme }) => theme.secondary};
+    }
 `
 
 const Icon = styled.span`
@@ -30,11 +42,6 @@ const Icon = styled.span`
     font-size: 2rem;
 `
 
-const NamePlatillo = styled.h4`
-    font-size: 0.9rem;
-    font-weight: 300;
-    color: ${({ theme }) => theme.foodColor};
-`
 const Platillos = ({comida,icono}) => {
     return (
         <Container>

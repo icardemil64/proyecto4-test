@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import DetallePedido from './DetallePedido'
+import TotalDePedido from './TotalDePedido'
 
 const Container = styled.div`
     width: 100%;
@@ -11,10 +12,9 @@ const Container = styled.div`
 
 const ContainerPedido = styled.div`
     width: 100%;
-    /*border: 1px solid ${({ theme }) => theme.buttonColor};*/
     background-color: ${({ theme }) => theme.secondary};
     border-radius: 1rem;
-    padding: 3rem;
+    padding: 2rem;
 `
 
 const Title = styled.div`
@@ -35,6 +35,7 @@ const ListaPedidos = () => {
                 <DetallePedido/>
                 <DetallePedido/>
                 <DetallePedido/>
+                <TotalDePedido/>
             </ContainerPedido>
         </Container>
     )
